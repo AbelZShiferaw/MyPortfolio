@@ -13,12 +13,12 @@
     transition: all 2s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
-    .menu-btn.close .btn-line:nth-child(1) {
+    .menu-btn.close git .btn-line:nth-child(1) {
       background: red;
       transform: rotate(45deg) translate(5px, 5px); }
-    .menu-btn.close .btn-line:nth-child(2) {
+    .menu-btn.close git .btn-line:nth-child(2) {
       opacity: 0; }
-    .menu-btn.close .btn-line:nth-child(3) {
+    .menu-btn.close git .btn-line:nth-child(3) {
       background: red;
       transform: rotate(-45deg) translate(7px, -6px); }
 

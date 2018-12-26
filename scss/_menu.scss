@@ -20,8 +20,7 @@
 
   &.close {
     transform: rotate(180deg);
-
-    .btn-line {
+    git .btn-line {
       &:nth-child(1) {
         background: red;
         transform: rotate(45deg) translate(5px, 5px);
