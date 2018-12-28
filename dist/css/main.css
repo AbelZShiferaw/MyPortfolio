@@ -1,16 +1,17 @@
+@charset "UTF-8";
 .menu-btn {
   position: absolute;
   z-index: 3;
   right: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all 2s ease-out; }
+  transition: all 1s ease-out; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: #eece1a;
-    transition: all 2s ease-out; }
+    transition: all 1s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close git .btn-line:nth-child(1) {
@@ -45,13 +46,13 @@
     background: #debf10;
     list-style: none;
     transform: translate3d(0, -100%, 0);
-    transition: all 2s ease-out; }
+    transition: all 1s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
     background: #9b9797;
     transform: translate3d(0, 100%, 0);
-    transition: all 2s ease-out; }
+    transition: all 1s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
@@ -63,7 +64,7 @@
       object-fit: contain; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
-    transition: all 2s ease-out; }
+    transition: all 1s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
@@ -76,9 +77,9 @@
     font-weight: 300;
     color: #000 !important;
     text-decoration: none;
-    transition: all 2s ease-out; }
+    transition: all 1s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: #9b9797; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.2s; }
@@ -92,6 +93,27 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.8s; }
 
+/*@include mediaXl {
+}
+
+@include mediaLg {
+}
+
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@include mediaSm {
+}
+*/
 * {
   box-sizing: border-box; }
 
@@ -100,37 +122,38 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/background.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
-      content: "";
+      content: "\“The best way to predict your future is to create it.\” ― Abraham Lincoln ";
       position: absolute;
       top: 0;
       right: 0;
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(155, 151, 151, 0.5); }
+      background: rgba(155, 151, 151, 0.8); }
 
 h1,
 h2,
 h3 {
   margin: 0;
-  font-weight: 500; }
+  font-weight: 400; }
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 5rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     padding: 0.2rem 1rem;
-    background: rgba(160, 156, 156, 0.5); }
+    background: rgba(239, 208, 35, 0.7);
+    width: 60%; }
 
 a {
   color: #fff;
@@ -148,12 +171,12 @@ main {
   padding: 4rem;
   height: 100%; }
   main .icons {
-    margin-top: 1rem; }
+    margin-top: 0.3rem; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
         color: #eece1a;
-        transition: all 2s ease-out; }
+        transition: all 1s ease-out; }
   main#home {
     overflow: hidden; }
     main#home h1 {

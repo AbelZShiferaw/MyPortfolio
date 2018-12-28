@@ -2,10 +2,10 @@ $primary-color: rgb(155, 151, 151);
 $secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
-$background-opacity: 0.5;
+$background-opacity: 0.8;
 
 @mixin easOut {
-  transition: all 2s ease-out;
+  transition: all 1s ease-out;
 }
 
 @mixin background {
@@ -14,8 +14,9 @@ $background-opacity: 0.5;
       background: $home-image;
       background-attachment: fixed;
       background-size: cover;
+
       &:after {
-        content: "";
+        content: "\“The best way to predict your future is to create it.\” ― Abraham Lincoln ";
         position: absolute;
         top: 0;
         right: 0;
@@ -25,5 +26,25 @@ $background-opacity: 0.5;
         background: rgba($primary-color, $background-opacity);
       }
     }
+  }
+}
+
+//Media Query Mixins
+
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (min-width: 769) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
   }
 }
