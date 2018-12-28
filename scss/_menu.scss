@@ -9,10 +9,10 @@
   @include easOut;
 
   .btn-line {
-    width: 28px;
-    height: 3px;
-    margin: 0 0 5px 0;
-    background: #eece1a;
+    width: 35px;
+    height: 4px;
+    margin: 0 0 4.8px 0;
+    background: #fff;
     @include easOut;
   }
 
@@ -20,10 +20,14 @@
 
   &.close {
     transform: rotate(180deg);
-    git .btn-line {
+    .btn-line {
       &:nth-child(1) {
-        background: red;
+        background: #fff;
         transform: rotate(45deg) translate(5px, 5px);
+        &:hover {
+          background: #000;
+          @include easOut();
+        }
       }
 
       &:nth-child(2) {
@@ -31,18 +35,24 @@
       }
 
       &:nth-child(3) {
-        background: red;
+        background: #fff;
         transform: rotate(-45deg) translate(7px, -6px);
+      }
+
+      &:hover {
+        background: #000;
+        @include easOut();
       }
     }
   }
 }
 
 .menu {
-  position: fixed;
+  position: relative;
+
   top: 0;
-  width: 100%;
-  opacity: 0.6;
+  width: 120%;
+  opacity: 0.9;
   visibility: hidden;
 
   &.show {
@@ -57,7 +67,7 @@
     justify-content: center;
     float: left;
     width: 50%;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
   }
 

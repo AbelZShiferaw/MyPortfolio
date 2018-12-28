@@ -7,27 +7,33 @@
   cursor: pointer;
   transition: all 1s ease-out; }
   .menu-btn .btn-line {
-    width: 28px;
-    height: 3px;
-    margin: 0 0 5px 0;
-    background: #eece1a;
+    width: 35px;
+    height: 4px;
+    margin: 0 0 4.8px 0;
+    background: #fff;
     transition: all 1s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
-    .menu-btn.close git .btn-line:nth-child(1) {
-      background: red;
+    .menu-btn.close .btn-line:nth-child(1) {
+      background: #fff;
       transform: rotate(45deg) translate(5px, 5px); }
-    .menu-btn.close git .btn-line:nth-child(2) {
+      .menu-btn.close .btn-line:nth-child(1):hover {
+        background: #000;
+        transition: all 1s ease-out; }
+    .menu-btn.close .btn-line:nth-child(2) {
       opacity: 0; }
-    .menu-btn.close git .btn-line:nth-child(3) {
-      background: red;
+    .menu-btn.close .btn-line:nth-child(3) {
+      background: #fff;
       transform: rotate(-45deg) translate(7px, -6px); }
+    .menu-btn.close .btn-line:hover {
+      background: #000;
+      transition: all 1s ease-out; }
 
 .menu {
-  position: fixed;
+  position: relative;
   top: 0;
-  width: 100%;
-  opacity: 0.6;
+  width: 120%;
+  opacity: 0.9;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -38,7 +44,7 @@
     justify-content: center;
     float: left;
     width: 50%;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden; }
   .menu-nav {
     margin: 0;
@@ -93,27 +99,14 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.8s; }
 
-/*@include mediaXl {
-}
-
-@include mediaLg {
-}
-
-@include mediaMd {
+@media screen and (max-width: 768px) {
   main {
     align-items: center;
-    text-align: center;
-
-    .lg-heading {
+    text-align: center; }
+    main .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem;
-    }
-  }
-}
+      margin-bottom: 1rem; } }
 
-@include mediaSm {
-}
-*/
 * {
   box-sizing: border-box; }
 
@@ -171,7 +164,7 @@ main {
   padding: 4rem;
   height: 100%; }
   main .icons {
-    margin-top: 0.3rem; }
+    margin-top: 13rem; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
